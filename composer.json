@@ -38,11 +38,5 @@
                 "./phpunit.xml.dist": "phpunit.xml.dist"
             }
         }
-    },
-    "config": {
-        "allow-plugins": {
-            "drupal/core-composer-scaffold": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
     }
 }
