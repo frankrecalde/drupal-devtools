@@ -29,6 +29,7 @@
                     "path": "assets/initial.settings.php",
                     "overwrite": false
                 },
+                "./.lintstagedrc.yml": ".lintstagedrc.yml",
                 "./package.json": "package.json",
                 "./.nvmrc": ".nvmrc",
                 "./phpcs.xml.dist": "phpcs.xml.dist",
