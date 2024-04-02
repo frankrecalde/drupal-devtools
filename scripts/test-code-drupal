@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# vim: set ft=sh:
+
+ARGS="$@"
+if [ -z "$ARGS" ] ; then
+  ARGS='web/modules/custom web/themes/custom'
+fi
+
+SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
+cd "$SCRIPT_DIR/.."
+./vendor/bin/drupal-check $ARGS

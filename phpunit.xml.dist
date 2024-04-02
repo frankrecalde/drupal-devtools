@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://phpunit.readthedocs.io/en/latest/configuration.html -->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="web/core/tests/bootstrap.php" colors="true" beStrictAboutTestsThatDoNotTestAnything="true" beStrictAboutOutputDuringTests="true" beStrictAboutChangesToGlobalState="true" printerClass="\Drupal\Tests\Listeners\HtmlOutputPrinter" cacheResult="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage includeUncoveredFiles="true">
+    <include>
+      <directory>./web/modules/custom</directory>
+      <directory>./web/themes/custom</directory>
+    </include>
+    <exclude>
+      <directory suffix="Test.php">./</directory>
+    </exclude>
+  </coverage>
+  <php>
+    <!-- Set error reporting to E_ALL. -->
+    <ini name="error_reporting" value="32767"/>
+    <!-- Do not limit the amount of memory tests take to run. -->
+    <ini name="memory_limit" value="-1"/>
+    <!-- Example SIMPLETEST_BASE_URL value: http://localhost -->
+    <env name="SIMPLETEST_BASE_URL" value=""/>
+    <!-- Example SIMPLETEST_DB value: mysql://username:password@localhost/databasename#table_prefix -->
+    <env name="SIMPLETEST_DB" value=""/>
+    <!-- Example BROWSERTEST_OUTPUT_DIRECTORY value: /path/to/webroot/sites/simpletest/browser_output -->
+    <env name="BROWSERTEST_OUTPUT_DIRECTORY" value=""/>
+    <!-- Disable deprecation testing completely. -->
+    <env name="SYMFONY_DEPRECATIONS_HELPER" value="disabled"/>
+    <env name="HTTP_HOST" value=""/>
+    <env name="DRUPAL_ROOT" value="web"/>
+  </php>
+  <testsuites>
+    <testsuite name="unit">
+      <directory>./web/modules/custom/*/tests/src/Unit</directory>
+    </testsuite>
+    <testsuite name="functional">
+      <directory>./web/modules/custom/*/tests/src/Functional</directory>
+    </testsuite>
+  </testsuites>
+  <!-- Filter for coverage reports. -->
+</phpunit>

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# vim: set ft=sh:
+
+SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
+cd "$SCRIPT_DIR/../behat-tests"
+
+java -jar -Dwebdriver.chrome.driver="/usr/local/bin/chromedriver" /usr/local/share/selenium/selenium-server-standalone-3.141.59.jar >/dev/null 2>&1 &
+echo 'Running selenium.' >&2
+./vendor/bin/behat $@
+killall -9 java
+echo 'Selenium stopped.' >&2

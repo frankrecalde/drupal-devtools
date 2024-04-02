@@ -1,0 +1,13 @@
+{
+  "*.{js,tsx}": [
+    "prettier --write",
+    "npm run test:code:js"
+  ],
+  "*.{scss,css,less,sass}": [
+    "npm run test:code:styles"
+  ],
+  "*.{php,module,inc,install,engine,test,profile,view,theme,info}": [
+    "npm run test:code:php",
+    "npm run test:code:drupal"
+  ]
+}
