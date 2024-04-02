@@ -29,6 +29,7 @@
                     "path": "assets/initial.settings.php",
                     "overwrite": false
                 },
+                "./package.json": "package.json",
                 "./phpcs.xml.dist": "phpcs.xml.dist",
                 "./phpunit.xml.dist": "phpunit.xml.dist"
             }
