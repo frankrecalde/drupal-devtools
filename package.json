@@ -4,6 +4,7 @@
   "description": "Tools for developers.",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky",
     "test:phpunit": "vendor/bin/phpunit",
     "test:behat": "scripts/test-behat-selenium",
     "test:code:js": "scripts/test-code-js",
