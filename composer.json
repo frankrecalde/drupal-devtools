@@ -29,11 +29,6 @@
                     "path": "assets/initial.settings.php",
                     "overwrite": false
                 },
-                "./.editorconfig": {
-                    "mode": "replace",
-                    "path": ".editorconfig",
-                    "overwrite": false
-                },
                 "./phpcs.xml.dist": "phpcs.xml.dist",
                 "./phpunit.xml.dist": "phpunit.xml.dist"
             }
