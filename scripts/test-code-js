@@ -4,7 +4,7 @@
 ARGS="$@"
 
 if [ -z "$ARGS" ] ; then
-  ARGS='web/modules/custom web/themes/custom'
+  ARGS='web/themes/custom'
 fi
 
 SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
