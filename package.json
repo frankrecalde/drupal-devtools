@@ -19,7 +19,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "@frankrecalde/es-css-lint-config/drupal"
+      "./node_modules/@frankrecalde/es-css-lint-config/drupal"
     ],
     "root": true
   },
