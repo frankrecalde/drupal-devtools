@@ -76,3 +76,5 @@ $settings['trusted_host_patterns'] = [
   '^drupal-dev\.lndo\.site$',
   '^drupal-dev\.ddev\.site$',
 ];
+
+$settings['config_sync_directory'] = '../config/sync';
