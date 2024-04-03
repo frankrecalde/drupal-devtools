@@ -3,11 +3,11 @@
 
 ARGS="$@"
 
+if [ -z "$ARGS" ] ; then
+  ARGS='web/modules/custom web/themes/custom'
+fi
+
 SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 cd "$SCRIPT_DIR/.."
 
-if [ -z "$ARGS" ] ; then
-  ./node_modules/.bin/eslint --fix --color '**/**/*.js'
-else
-  ./node_modules/.bin/eslint --fix --color --config --ignore '**/**/*.js' $ARGS
-fi
+./node_modules/.bin/eslint --fix --color $ARGS
