@@ -13,7 +13,7 @@
     "test:code:styles": "scripts/test-code-styles"
   },
   "devDependencies": {
-    "@frankrecalde/es-css-lint-config": "^0.0.1",
+    "@frankrecalde/es-css-lint-config": "^0.0.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2"
   },
