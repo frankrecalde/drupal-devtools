@@ -4,9 +4,11 @@
     "license": "proprietary",
     "require": {
         "drupal/core-composer-scaffold": "*",
+        "mglaman/drupal-check": "^1.4"
+    },
+    "require-dev": {
         "drupal/coder": "^8.3",
         "dealerdirect/phpcodesniffer-composer-installer": "@stable",
-        "mglaman/drupal-check": "^1.4",
         "phpcompatibility/php-compatibility": "*",
         "phpspec/prophecy-phpunit": "^2.2",
         "phpunit/phpunit": "^10.5",
