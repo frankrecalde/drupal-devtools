@@ -3,9 +3,7 @@
     "description": "Assets for running linters, pre-commit hooks, xdebug and unit testing during Drupal site development.",
     "license": "proprietary",
     "require": {
-        "drupal/core-composer-scaffold": "*"
-    },
-    "require-dev": {
+        "drupal/core-composer-scaffold": "*",
         "drupal/coder": "^8.3",
         "dealerdirect/phpcodesniffer-composer-installer": "@stable",
         "mglaman/drupal-check": "^1.4",
