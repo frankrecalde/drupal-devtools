@@ -21,6 +21,9 @@
     "extends": [
       "./node_modules/@frankrecalde/es-css-lint-config/drupal"
     ],
+    "ignorePatterns": [
+      "vite.config.js"
+    ],
     "root": true
   },
   "stylelint": {
