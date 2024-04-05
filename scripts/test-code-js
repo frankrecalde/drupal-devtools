@@ -10,4 +10,4 @@ fi
 SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 cd "$SCRIPT_DIR/.."
 
-./node_modules/.bin/eslint --fix --color $ARGS
+./node_modules/.bin/eslint --ignore-pattern '*.yml' --ignore-pattern '/**/dist/*' --fix --color $ARGS
