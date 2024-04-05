@@ -8,5 +8,5 @@ fi
 
 SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 cd "$SCRIPT_DIR/.."
-./vendor/bin/phpcbf --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,engine,test,profile,view,theme,info $ARGS \
-&& ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,engine,test,profile,view,theme,info $ARGS
+./vendor/bin/phpcbf --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,engine,test,profile,view,theme,info --ignore=*/node_modules/* $ARGS \
+&& ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,inc,install,engine,test,profile,view,theme,info --ignore=*/node_modules/* $ARGS
