@@ -4,7 +4,8 @@
     "license": "proprietary",
     "require": {
         "drupal/core-composer-scaffold": "*",
-        "mglaman/drupal-check": "^1.4"
+        "mglaman/drupal-check": "^1.4",
+        "palantirnet/drupal-rector": "^0.20.1"
     },
     "require-dev": {
         "drupal/coder": "^8.3",
@@ -33,7 +34,8 @@
                 "./package.json": "package.json",
                 "./.nvmrc": ".nvmrc",
                 "./phpcs.xml.dist": "phpcs.xml.dist",
-                "./phpunit.xml.dist": "phpunit.xml.dist"
+                "./phpunit.xml.dist": "phpunit.xml.dist",
+                "./rector.php": "rector.php"
             }
         }
     }

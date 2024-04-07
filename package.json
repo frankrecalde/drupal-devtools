@@ -10,6 +10,7 @@
     "test:code:js": "scripts/test-code-js",
     "test:code:php": "scripts/test-code-php",
     "test:code:drupal": "scripts/test-code-drupal",
+    "test:code:drupal-rector": "scripts/test-code-drupal-rector",
     "test:code:styles": "scripts/test-code-styles"
   },
   "devDependencies": {
