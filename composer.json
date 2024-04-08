@@ -35,7 +35,9 @@
                 "./.nvmrc": ".nvmrc",
                 "./phpcs.xml.dist": "phpcs.xml.dist",
                 "./phpunit.xml.dist": "phpunit.xml.dist",
-                "./rector.php": "rector.php"
+                "./rector.php": "rector.php",
+                "./.env.example": ".env.example",
+                "[web-root]/sites/default/": "assets/drush.yml"
             }
         }
     }
