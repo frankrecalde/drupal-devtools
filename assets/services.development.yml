@@ -3,6 +3,8 @@
 # This file is loaded in development environments.
 
 parameters:
+  twig.config:
+    debug: true
   http.response.debug_cacheability_headers: true
 
   # Configure Cross-Site HTTP requests (CORS).
