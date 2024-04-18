@@ -50,4 +50,43 @@ There are several scripts available to aid in development tasks.
 
 **Note:** All linter scripts will run as part of the pre-commit checks. Setup can be found in `.lintstagedrc.yml` file.
 
-**To do list of scripts**
+**Run the PHP and YAML linter**
+
+```
+  npm run test:code:php
+  npm run test:code:php web/modules/custom/custom_module/src/Sample.php
+  npm run test:code:php web/themes/custom/custom_module
+```
+
+**Run the check on Drupal correctness and deprecation errors**
+
+```
+  npm run test:code:drupal
+  npm run test:code:drupal web/modules/custom/custom_module/src/Sample.php
+  npm run test:code:drupal web/themes/custom/custom_module
+```
+
+**Run automate fixing deprecated Drupal code**
+
+```
+  npm run test:code:drupal-rector
+```
+
+**Run the JavaScript linter**
+
+```
+  npm run test:code:js
+  npm run test:code:js web/modules/custom/custom_module/js/sample.es6.js
+  npm run test:code:js web/themes/custom/custom_module/js
+```
+
+**Run the Style linter**
+
+```
+  npm run test:code:styles
+  npm run test:code:styles web/themes/custom/custom_module/scss
+```
+
+**Run the functional and unit tests (todo)**
+
+**Run Behat tests(todo)**
