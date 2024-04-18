@@ -1,0 +1,40 @@
+# Development services.
+#
+# This file is loaded in development environments.
+
+parameters:
+  http.response.debug_cacheability_headers: true
+
+  # Configure Cross-Site HTTP requests (CORS).
+  # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+  cors.config:
+    enabled: true
+
+    # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders:
+      - "x-csrf-token"
+      - "content-type"
+      - "authorization"
+      - "origin"
+      - "accept"
+      - "x-requested-with"
+
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: ["*"]
+
+    # Enable CORS for headless development.
+    allowedOriginsPatterns:
+      - '#^https?://localhost(:\d+)?$#'
+      - '#\.lndo\.site(:\d+)?$#'
+      - '#\.ddev\.site(:\d+)?$#'
+      - '#\.amazee\.io$#'
+      - '#\.platformsh\.site$#'
+
+    # Sets the Access-Control-Expose-Headers header.
+    exposedHeaders: false
+
+    # Sets the Access-Control-Max-Age header.
+    maxAge: 0
+
+    # Sets the Access-Control-Allow-Credentials header.
+    supportsCredentials: true
