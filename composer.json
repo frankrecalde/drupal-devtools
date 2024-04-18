@@ -27,9 +27,7 @@
                 "./rector.php": "rector.php",
                 "./.env": ".env.example",
                 "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
-                "[web-root]/sites/default/settings.memcache.php": "assets/settings.memcache.php",
                 "[web-root]/sites/default/services.development.php": "assets/services.development.yml",
-                "[web-root]/sites/default/services.memcache.yml": "assets/services.memcache.yml",
                 "[web-root]/sites/default/services.yml": "assets/services.yml",
                 "[web-root]/sites/default/settings.php": {
                     "mode": "replace",

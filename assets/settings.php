@@ -29,7 +29,7 @@ putenv('ENVIRONMENT_TYPE=' . getenv('ENVIRONMENT_TYPE') ?: 'production');
 $settings['hash_salt'] = hash('sha256', getenv('DRUPAL_HASH_SALT') ?: getenv('MARIADB_HOST'));
 
 // Memcache settings.
-include __DIR__ . '/settings.memcache.php';
+// include __DIR__ . '/settings.memcache.php';
 
 // Database connection.
 $databases['default']['default'] = [
