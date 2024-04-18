@@ -19,7 +19,6 @@
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
-                "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
                 "./.lintstagedrc.yml": ".lintstagedrc.yml",
                 "./package.json": "package.json",
                 "./.nvmrc": ".nvmrc",
