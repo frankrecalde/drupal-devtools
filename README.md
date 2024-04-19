@@ -87,6 +87,10 @@ There are several scripts available to aid in development tasks.
   npm run test:code:styles web/themes/custom/custom_module/scss
 ```
 
-**Run the functional and unit tests (todo)**
+**Run the functional and unit tests**
+
+```
+npm run test:phpunit
+```
 
 **Run Behat tests(todo)**
